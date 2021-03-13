@@ -15,4 +15,9 @@ typedef struct op
 	int (*function)(va_list);
 } op_t;
 
+/* prototypes to print everything */
+int _putchar(char c);
+int _printf(const char *format, ...);
+int print_c(va_list v);
+
 #endif /* _HOLBERTON_H */
