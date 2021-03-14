@@ -33,3 +33,14 @@ int print_s(va_list v)
 
 	return (i);
 }
+
+/**
+ * print_per - print percentage
+ * @v: Value to be printed
+ * Return: expected a variable to be unused
+ */
+int print_per(__attribute__((unused)) va_list v)
+{
+	_putchar(37);
+	return (1);
+}
