@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * print_char - print char
+ * print_c - print char
  * @v: value to be printed
- * Return: int
+ * Return: written char
  */
 int print_c(va_list v)
 {
@@ -46,6 +46,7 @@ int print_s(va_list v)
 int print_per(__attribute__((unused)) va_list v)
 {
 	int a = 37;
+
 	write(1, &a, 1);
 	return (1);
 }
