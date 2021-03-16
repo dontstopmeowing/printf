@@ -32,8 +32,6 @@ int print_i(va_list v)
 
 	arguments = va_arg(v, int);
 	tmp = arguments;
-	// If va_arg is smaller than 0, put a - sign
-	// and change number to positive
 	if (arguments < 0)
 	{
 		write(1, "-", 1);

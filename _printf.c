@@ -24,29 +24,19 @@ int _printf(const char *format, ...)
 				i++;
 				numberOfChars++;
 			}
-
 			list = get_function(&format[i + 1]);
-
 			if (list != NULL)
 			{
 				i = i + 2;
 				numberOfChars = numberOfChars + list(mylist);
 				continue;
 			}
-
 			if (format[i] == 0)
-			{
 				return (numberOfChars);
-			}
 			else if (format[i + 1] == 0)
-			{
 				return (-1);
-			}
-
 			write(1, &format[i], 1);
-
 			numberOfChars++;
-
 			if (format[i + 1] == '%')
 				i = i + 2;
 			else
@@ -56,7 +46,5 @@ int _printf(const char *format, ...)
 		return (numberOfChars);
 	}
 	else
-	{
 		return (-1);
-	}
 }
