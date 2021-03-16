@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdlib.h>
 /**
  * print_char - print char
  * @v: value to be printed
@@ -7,7 +6,9 @@
  */
 int print_c(va_list v)
 {
-	_putchar(va_arg(v, int));
+	char a = (char)va_arg(v, int);
+
+	write(1, &a, 1);
 	return (1);
 }
 
@@ -18,17 +19,20 @@ int print_c(va_list v)
  */
 int print_s(va_list v)
 {
-	size_t i;
-	char *str = va_arg(v, char *);
+	int i = 0;
+	char *a = va_arg(v, char *);
 
-	if (str == NULL)
+	if (a != NULL)
 	{
-		str = "(null)";
+		while (a[i])
+		{
+			write(1, &a[i], 1);
+			i++;
+		}
 	}
-
-	for (i = 0; i < str[i] != '\0'; i++)
+	else
 	{
-		_putchar(str[i]);
+		a = "(null)";
 	}
 
 	return (i);
@@ -41,6 +45,7 @@ int print_s(va_list v)
  */
 int print_per(__attribute__((unused)) va_list v)
 {
-	_putchar(37);
+	int a = 37;
+	write(1, &a, 1);
 	return (1);
 }
