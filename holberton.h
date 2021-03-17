@@ -25,5 +25,7 @@ int print_c(va_list v);
 int print_s(va_list v);
 int print_per(__attribute__((unused)) va_list v);
 int print_i(va_list v);
+int _numlen(int n);
+int _pow(int x, int y);
 
 #endif /* _HOLBERTON_H */

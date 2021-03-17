@@ -1,50 +1,71 @@
-#include "holberton.h"
+#include <stdarg.h>
 #include <stdlib.h>
-#include <limits.h>
-/**
- * convert - function that converts
- * numbers to printable numbers in ascii code
- * @n: numbers to be converted
- * Return: written value
- */
-int convert(int n)
-{
-	int a;
-
-	if (n / 10 != 0)
-	{
-		convert(n / 10);
-	}
-
-	a = ((n % 10) + 48);
-
-	return (write(1, &a, 1));
-}
+#include <stdio.h>
+#include "holberton.h"
 
 /**
- * print_i - function that prints integers
- * @v: arguments
- * Return: counter of arguments passed through
+ * print_i - print an integer and decimal
+ * @v: list of arguments
+ * Return: i - len
  */
 int print_i(va_list v)
 {
-	int arguments, tmp, i = 0, j = 0;
+	int arguments, tmp, i = 0, j, num;
 
 	arguments = va_arg(v, int);
-	tmp = arguments;
+
 	if (arguments < 0)
 	{
+		tmp = -arguments;
 		write(1, "-", 1);
 		i++;
-		arguments = -arguments;
 	}
-	for (; tmp != 0; j++)
+	else
+		tmp = arguments;
+	for (j = 1; j <= _numlen(tmp); j++)
 	{
-		tmp = tmp / 10;
+		num = ((tmp / (_pow(10, _numlen(tmp) - j))) % 10) + 48;
+		write(1, &num, 1);
 		i++;
 	}
-
-	convert(arguments);
-
 	return (i);
+}
+/**
+ * _numlen - function that gets the lenght of a string of numbers
+ * @n: numbers
+ * Return: counter
+ */
+int _numlen(int n)
+{
+	int i = 1;
+	int control = 10;
+
+	if (n < 0)
+	{
+		n = -n;
+	}
+	while (control <= n)
+	{
+		i++;
+		control = control * 10;
+	}
+	return (i);
+}
+/**
+ * _pow - function that returns the value of x raised to the power of y
+ * @x: base
+ * @y: power
+ * Return: raised y
+ */
+int _pow(int x, int y)
+{
+	if (y < 0)
+	{
+		return (-1);
+	}
+	else if (y == 0)
+	{
+		return (1);
+	}
+	return (x * _pow(x, y - 1));
 }
