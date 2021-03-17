@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * print_c - print char
- * @v: value to be printed
- * Return: written char
+ * print_c - imprimir un caracter
+ * @v: valor a imprimir
+ * Return: valor impreso
  */
 int print_c(va_list v)
 {

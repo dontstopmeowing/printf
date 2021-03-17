@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
- * get_function - get the right function based on the following
- * @ptr: ptr that has printf operators
+ * get_function - obtener funcion
+ * @ptr: puntero que obtiene diferentes especificadores
  *
- * Return: ptr with valid function, null otherwise.
+ * Return: ptr
  */
 int (*get_function(const char *ptr))(va_list)
 {

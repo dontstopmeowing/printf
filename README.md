@@ -1,6 +1,4 @@
-## 0x11. C - _printf
-
-Based on the ["Secrets of printf"](http://www.cypress.com/file/54761/download) scientific paper by Professor Don Colton
+# 0x11. C - _printf
 
 We are supposed to write our printf function that can at least handle the following parameters
 
@@ -8,7 +6,7 @@ We are supposed to write our printf function that can at least handle the follow
 - `%s (as to print a string)`
 - `% (as to print a cent sign)`
 
-#### Requirements
+### Requirements
 
 - Allowed editors: vi, vim, emacs
 - All your files will be compiled on Ubuntu 14.04 LTS
@@ -22,7 +20,7 @@ We are supposed to write our printf function that can at least handle the follow
 - Our main.c files might be different from the one shown in the examples
 - The prototypes of all your functions should be included in your header file called holberton.h
 
-#### Mandatory tasks assigned
+### Mandatory tasks assigned
 
 - [x] Write a function that produces output according to a format.
 

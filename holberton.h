@@ -18,7 +18,6 @@ typedef struct op
 	int (*function)(va_list);
 } op_t;
 
-/* prototypes to print everything */
 int _printf(const char *format, ...);
 int (*get_function(const char *format))(va_list);
 int print_c(va_list v);
