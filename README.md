@@ -1,7 +1,5 @@
 ## 0x11. C - _printf
 
-Based on the ["Secrets of printf"](http://www.cypress.com/file/54761/download) scientific paper by Professor Don Colton
-
 We are supposed to write our printf function that can at least handle the following parameters
 
 - `%c (as to print a character)`
