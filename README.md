@@ -2,7 +2,7 @@
 
 ### Low-level programming & Algorithms
 
-**Authors:** _Juan Pablo Gaviria and Juan Jose Carabali_
+**Authors:** Carlos Galeano and Alexander Rodriguez
 
 Based on the ["Secrets of printf"](http://www.cypress.com/file/54761/download) scientific paper by Professor Don Colton
 
