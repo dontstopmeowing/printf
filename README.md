@@ -1,4 +1,4 @@
-## 0x11. C - _printf
+# 0x11. C - _printf
 
 We are supposed to write our printf function that can at least handle the following parameters
 
