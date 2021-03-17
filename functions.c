@@ -29,13 +29,13 @@ int print_s(va_list v)
 			write(1, &a[i], 1);
 			i++;
 		}
+		return (i);
 	}
 	else
 	{
 		write(1, "(null)", 6);
+		return (6);
 	}
-
-	return (i);
 }
 
 /**
