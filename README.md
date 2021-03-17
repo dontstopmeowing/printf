@@ -20,7 +20,7 @@ We are supposed to write our printf function that can at least handle the follow
 - Our main.c files might be different from the one shown in the examples
 - The prototypes of all your functions should be included in your header file called holberton.h
 
-#### Mandatory tasks assigned
+### Mandatory tasks assigned
 
 - [x] Write a function that produces output according to a format.
 
