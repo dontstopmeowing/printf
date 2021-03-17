@@ -22,7 +22,7 @@ int print_s(va_list v)
 	int i = 0;
 	char *a = va_arg(v, char *);
 
-	if (a != NULL)
+	if (a != NULL || a != 0)
 	{
 		while (a[i])
 		{
@@ -33,6 +33,7 @@ int print_s(va_list v)
 	else
 	{
 		a = "(null)";
+		write(1, &a[i], 6);
 	}
 
 	return (i);
