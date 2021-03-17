@@ -4,8 +4,8 @@
 #include "holberton.h"
 
 /**
- * print_i - print an integer and decimal
- * @v: list of arguments
+ * print_i - imprimir entero a decimal
+ * @v: lista de argumentos
  * Return: i - len
  */
 int print_i(va_list v)
