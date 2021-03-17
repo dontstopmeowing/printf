@@ -6,7 +6,7 @@ We are supposed to write our printf function that can at least handle the follow
 - `%s (as to print a string)`
 - `% (as to print a cent sign)`
 
-#### Requirements
+### Requirements
 
 - Allowed editors: vi, vim, emacs
 - All your files will be compiled on Ubuntu 14.04 LTS
